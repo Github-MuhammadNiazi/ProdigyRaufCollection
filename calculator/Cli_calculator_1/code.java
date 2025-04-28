@@ -41,7 +41,7 @@ public class code {
                     System.out.println("Incorrect choice");
                 }
             }
-        } while (choice != 10);
+        } while (choice == 10);
         sc.close();
     }
 }
