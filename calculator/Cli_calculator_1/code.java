@@ -1,17 +1,19 @@
+
 package ProdigyRaufCollection.calculator.Cli_calculator_1;
 
+import java.io.IOException;
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
-public class Calculator {
-    public static void main(String[] args) {
+public class code {
+    public static void main(String[] args) throws IOException {
         Scanner sc = new Scanner(System.in);
         int choice = 0;
         do {
-            System.out.println("Enter your choice....\n1.Enter\n2.Exit");
-            choice = sc.nextInt();
+            System.out.println("Press [Enter] to continue looping, [Backspace] to stop...");
+            choice = System.in.read();
             double result = 0;
-            if (choice == 1) {
+            if (choice == 10) {
                 System.out.println("Enter number :");
                 float a = sc.nextFloat();
                 System.out.println("Enter another number :");
@@ -40,8 +42,7 @@ public class Calculator {
                     System.out.println("Incorrect choice");
                 }
             }
-        } while (choice != 2);
-        System.out.println("Thanks for using our calculator system");
+        } while (choice != 10);
         sc.close();
     }
 }
