@@ -9,7 +9,7 @@ public class code {
         Scanner sc = new Scanner(System.in);
         int choice = 0;
         do {
-            System.out.println("Press [Enter] to continue looping, [Backspace] to stop...");
+            System.out.println("Press any key to exit or enter to calculate again");
             choice = System.in.read();
             double result = 0;
             if (choice == 10) {
@@ -35,7 +35,7 @@ public class code {
                             break;
                         default:
                     }
-                    DecimalFormat df = new DecimalFormat("0.####");
+                    DecimalFormat df = new DecimalFormat("0.##");
                     System.out.println("The result is :" + df.format(result));
                 } else {
                     System.out.println("Incorrect choice");
