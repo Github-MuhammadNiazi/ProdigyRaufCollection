@@ -7,10 +7,8 @@ import java.util.Scanner;
 public class code {
     public static void main(String[] args) throws IOException {
         Scanner sc = new Scanner(System.in);
-        int choice = 0;
+        int choice = 10;
         do {
-            System.out.println("Press any key to exit or enter to calculate again");
-            choice = System.in.read();
             double result = 0;
             if (choice == 10) {
                 System.out.println("Enter number :");
@@ -40,6 +38,8 @@ public class code {
                 } else {
                     System.out.println("Incorrect choice");
                 }
+                System.out.println("Press any key to exit or enter to calculate again");
+                choice = System.in.read();
             }
         } while (choice == 10);
         sc.close();
