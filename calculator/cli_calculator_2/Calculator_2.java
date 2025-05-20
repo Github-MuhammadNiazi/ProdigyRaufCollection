@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
-public class PracFinal {
+public class Calculator_2 {
     public static void main(String[] args) throws IOException {
         Scanner sc = new Scanner(System.in);
         int choice = 10;
@@ -25,7 +25,7 @@ public class PracFinal {
 
                         check = false;
                     } catch (Exception e) {
-                        System.out.println("Enter number 1 again");
+                        System.out.println("You have entered an invalid number");
                         check = false;
                     }
                     sc.nextLine();
@@ -38,7 +38,7 @@ public class PracFinal {
                     } catch (NumberFormatException e) {
                         check = false;
                     } catch (Exception e) {
-                        System.out.println("Enter a valid number!");
+                        System.out.println("You have entered an invalid number");
                         check = false;
                     }
                     sc.nextLine();
@@ -49,7 +49,7 @@ public class PracFinal {
                         System.out.println("Enter your choice(+,-,/*)");
                         operation = sc.next().charAt(0);
                     } catch (Exception e) {
-                        System.out.println("Please enter a valid character ");
+                        System.out.println("You have selected an invalid operation");
                         check = false;
                     }
                     if ((operation != '+' && operation != '-') && (operation != '*' && operation != '/')) {
@@ -75,7 +75,7 @@ public class PracFinal {
                         default:
                     }
                     DecimalFormat df = new DecimalFormat("0.##");
-                    System.out.println("The result is :" + df.format(result));
+                    System.out.println("The result is : " + df.format(result));
                 } else {
                     System.out.println("Incorrect choice");
                 }
