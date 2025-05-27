@@ -1,4 +1,4 @@
-def printHelloWithMessage(str2):
+def print_hello_with_message(str2):
     str1="Hello"
     print(str1,str2)
 
