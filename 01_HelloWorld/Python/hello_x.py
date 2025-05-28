@@ -1,7 +1,7 @@
-def print_hello_with_message(str2):
+def PrintMessage(str2):
     str1="Hello"
     print(str1,str2)
 
 # From here execution starts
 str2=input("Enter your name :")
-printHelloWithMessage(str2)
+PrintMessage(str2)
